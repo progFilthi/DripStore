@@ -1,5 +1,7 @@
 import Link from "next/link";
 import React from "react";
+import { Button } from "../ui/button";
+import { ModeToggle } from "../theme/mode-toggle";
 
 const Navlinks = [
   {
@@ -29,11 +31,12 @@ export default function Navbar() {
           </li>
         ))}
       </ul>
-      <Link href={"/auth/sign-up"}>
-        <button className="rounded-lg border p-2 shadow cursor-pointer">
-          Sign Up
-        </button>
-      </Link>
+      <div className="flex items-center gap-4">
+        <ModeToggle />
+        <Link href={"/auth/sign-up"}>
+          <Button>Sign Up</Button>
+        </Link>
+      </div>
     </nav>
   );
 }

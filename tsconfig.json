@@ -30,6 +30,6 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts",
     "components/navbar/Navbar.tsx"
-  ],
+, "components/theme/mode-toggle.tsx"  ],
   "exclude": ["node_modules"]
 }
